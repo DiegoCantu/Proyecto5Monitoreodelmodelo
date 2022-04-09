@@ -5,6 +5,9 @@
         // fpr for "false positive rate"
         // tpr for "true positive rate"
 
+        // FPR: la proporción de todas las muestras que en realidad fueron negativas y que se consideraron incorrectas como positivas. FPR = FP / (FP + TN)
+        // TPR: La tasa de ser juzgado positivamente como positivo entre todas las muestras realmente positivas. TPR = TP / (TP + FN)
+        // Fuente: https://programmerclick.com/article/7523185645/
         var rocChartOptions = {
             "margin": margin,
             "width": width,
