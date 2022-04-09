@@ -14,8 +14,8 @@ py manage.py runserver
 Abrir la liga de la terminal:
 http://127.0.0.1:8000/
 
-La siguiente ruta mostrara las 3 graficas:
-http://127.0.0.1:8000/graficas/
+La siguiente ruta mostrara las 2 graficas de histograma:
+http://127.0.0.1:8000/graficas/histogram_chart
 
 Los archivos para generar las graficas se encuentran en la carpeta static:
 
@@ -24,6 +24,9 @@ histogram1.js
 
 2. Incluye en tu dashboard una gráfica de histograma con la distribución de las etiquetas de predicción
 histogram2.js
+
+La siguiente ruta mostrara la grafica de roc:
+http://127.0.0.1:8000/graficas/roc_chart
 
 3. Incluye en tu dashboard una gráfica que muestra la curva ROC obtenida para el último dataset utilizado para la predicción.
 rocEvent.js
