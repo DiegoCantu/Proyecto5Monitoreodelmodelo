@@ -13,11 +13,11 @@
                 "translate(" + margin.left + "," + margin.top + ")");
 
         // get the data
-        d3.csv("http://127.0.0.1:8000/static/data.csv", function (data) {
+        d3.csv("http://127.0.0.1:8000/static/distribucionEtiquetas.csv", function (data) {
 
             // X axis: scale and draw:
             var x = d3.scaleLinear()
-                .domain([0, 1000])     // can use this instead of 1000 to have the max of data: d3.max(data, function(d) { return +d.price })
+                .domain([0, 1000])     // can use this instead of 1000 to have the max of data: d3.max(data, function(d) { return +d.distribucionEtiquetas })
                 .range([0, width]);
             svg2.append("g")
                 .attr("transform", "translate(0," + height + ")")
@@ -25,7 +25,7 @@
 
             // set the parameters for the histogram
             var histogram = d3.histogram()
-                .value(function (d) { return d.price; })   // I need to give the vector of value
+                .value(function (d) { return d.distribucionEtiquetas; })   // I need to give the vector of value
                 .domain(x.domain())  // then the domain of the graphic
                 .thresholds(x.ticks(70)); // then the numbers of bins
 

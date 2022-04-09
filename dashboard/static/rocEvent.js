@@ -33,6 +33,6 @@
             "smooth": true
         }
 
-        d3.json("http://127.0.0.1:8000/static/data.json", function (error, data) {
+        d3.json("http://127.0.0.1:8000/static/lastDataset.json", function (error, data) {
             rocChart("#roc", data, rocChartOptions)
         })

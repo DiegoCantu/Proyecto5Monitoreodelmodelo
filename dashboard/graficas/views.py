@@ -17,18 +17,3 @@ def roc_chart(request):
                            'curva ROC obtenida para el último dataset utilizado para la predicción.'}
     return render(request, 'roc_chart/roc_chart.html', context)
 
-
-def get_data(request):
-    #header = ['price']
-    #data = [50, 50, 30, 40]
-    #with open('data.csv', 'w', encoding='UTF8') as f:
-        #writer = csv.writer(f)
-        # write the header
-        #writer.writerow(header)
-        # write the data
-        #writer.writerow(data)
-    #file = open('data.csv')
-    #csvreader = csv.reader(file)
-    #return HttpResponse(csvreader)
-    return None
-
