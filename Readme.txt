@@ -25,6 +25,15 @@ histogram1.js
 2. Incluye en tu dashboard una gráfica de histograma con la distribución de las etiquetas de predicción
 histogram2.js
 
+Template:
+Proyecto5Monitoreo/dashboard/graficas/templates/histogram_charts/histogram_Chart.html
+
+Datos primera grafica de historgrama:
+static/scores.csv
+
+Datos segunda grafica de historgrama:
+static/distriucionEtiquetas.csv
+
 La siguiente ruta mostrara la grafica de roc:
 http://127.0.0.1:8000/graficas/roc_chart
 
@@ -32,8 +41,8 @@ http://127.0.0.1:8000/graficas/roc_chart
 rocEvent.js
 rocChart.js
 
-Dentro de Proyecto5Monitoreo/dashboard/graficas/
-Se encuentra el archivo views.py el cual es el encargado de generar la vista.
+Template:
+Proyecto5Monitoreo/dashboard/graficas/templates/roc_chart/roc_chart.html
 
-La vista que se carga es el template Index.html que se encuentra en:
-Proyecto5Monitoreo/dashboard/graficas/templates/graficas
+Datos ultimo dataset:
+static/lastDataset.json
