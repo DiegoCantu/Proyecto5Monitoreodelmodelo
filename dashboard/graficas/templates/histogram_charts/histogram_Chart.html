@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en-us" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Graficas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/static/admin/css/fonts.css">
+    <!-- Se importan los estilos -->
+    <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/static/style.css">
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="https://tec.iexe.edu.mx/mod/assign/view.php?id=28156" target="_blank" rel="noopener">
+            IEXE Graficas
+        </a>
+        <p>Proyecto 5: Monitoreo del modelo</p>
+    </header>
+    <main>
+        <div style="margin-top: 50px">
+            <h1>{{grafica1}}</h1>
+            <div id="grafica1"></div>
+            <h1 style="margin-top: 20px">{{grafica2}}</h1>
+            <div id="grafica2"></div>
+        </div>
+    </main>
+     <!--Libreria para generar grafica d3 en la version 4 -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+     <!--Script para generar la primer grafica de histograma -->
+    <script src="http://127.0.0.1:8000/static/histogram1.js"></script>
+    <!--Script para generar la segunda grafica de histograma -->
+    <script src="http://127.0.0.1:8000/static/histogram2.js"></script>
+</body>
+
+</html>
